@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:clickable="true"
+              android:layout_height="wrap_content" android:visibility="visible">
+    <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="0dp" android:layout_weight="1" app:contentPadding="0dp"
+            app:cardBackgroundColor="@color/backgroundWhite"
+            android:id="@+id/cardview_recipe" app:cardPreventCornerOverlap="true" app:cardUseCompatPadding="true">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp" app:srcCompat="@drawable/cookie"
+                    android:id="@+id/imageview_recipe_preview"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="@string/recipe_imageView_contentDescription"/>
+            <TextView
+                    android:text="@string/recipe_title_placeholder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/textview_recipe_title"
+                    android:contentDescription="@string/recipe_description_placeholder" android:textStyle="bold"
+                    android:textColor="@color/textPrimaryDark" android:textSize="20sp"
+                    android:layout_marginLeft="32dp" android:layout_marginTop="8dp" android:layout_marginRight="32dp"/>
+            <TextView
+                    android:text="@string/recipe_description_placeholder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/textview_recipe_description"
+                    android:layout_marginLeft="32dp" android:layout_marginRight="32dp" android:layout_marginTop="8dp"
+                    android:textColor="@color/textPrimaryDark"
+                    android:contentDescription="@string/recipe_description_placeholder"
+                    android:layout_marginBottom="12dp"/>
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp" android:id="@+id/hidden_recipeId"
+                    android:visibility="invisible"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

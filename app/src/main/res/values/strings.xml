@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_title">Recipe Book</string>
+    <string name="app_name">recipe-book-mobile</string>
+    <string name="recipe_imageView_contentDescription">Image of Recipe</string>
+    <string name="recipe_view_header">Recipes:</string>
+    <string name="title_activity_recipe_details">Recipe Details</string>
+</resources>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="recipe_title_placeholder">Recipe Title</string>
+    <string name="recipe_description_placeholder">Recipe Description</string>
+</resources>
